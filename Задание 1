@@ -1,16 +1,17 @@
 public class Solution {
     public static void main(String[] args){
-		int num = 1;
-		int n1 = 1;
-		int n2;
-		int n = Integer.MAX_VALUE;
-		System.out.print(num+" "+n1+" ");
-		for(int i = 3; i <= n; i++){
-			n2=num+n1;
-			System.out.print(n2+" ");
-			num=n1;
-			n1=n2;
-		}
-		System.out.println();
-	}
+    int num1 = 1;
+    int num2 = 1;
+    int num_temp;
+    
+    System.out.print(num1+" "+num2+" ");
+    
+    for(int i = 3; i <= 20; i++){
+      num_temp=num1+num2;
+      System.out.print(num_temp+" ");
+      num1=num2;
+      num2=num_temp;
+    }
+    System.out.println();
+  }
 }
